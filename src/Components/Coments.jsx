@@ -11,19 +11,19 @@ const Coments = () => {
   const [comentario, setComentario] = useState('');
   const [comentarios, setComentarios] = useState([]);
 
-  // Carrega os comentários salvos no localStorage ao carregar a página
+ 
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem(`comentarios-${slug}`)) || [];
     setComentarios(stored);
   }, [slug]);
 
-  // Salva os comentários no localStorage
+
   const salvarComentarios = (novos) => {
     localStorage.setItem(`comentarios-${slug}`, JSON.stringify(novos));
     setComentarios(novos);
   };
 
-  // Adiciona um novo comentário
+
   const handleComentario = (e) => {
     e.preventDefault();
 
@@ -44,7 +44,7 @@ const Coments = () => {
     setNome('');
   };
 
-  // Deleta um comentário
+
   const deletarComentario = (id) => {
     const atualizados = comentarios.filter(c => c.id !== id);
     salvarComentarios(atualizados);
@@ -53,8 +53,8 @@ const Coments = () => {
   return (
     <div className='container mx-auto text-white'>
 
-      {/* Área de Comentários */}
-      <section className='mt-8 mb-20'>
+    
+      <section className='mt-8 mb-20 p-2'>
         <h2 className='text-xl font-bold mb-4'>Comentários</h2>
 
         <form onSubmit={handleComentario} className='mb-6 space-y-4'>
