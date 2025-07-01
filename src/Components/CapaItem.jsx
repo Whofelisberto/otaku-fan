@@ -41,7 +41,7 @@ const CapaItem = () => {
         <div className="grid grid-cols-6 gap-5 max-md:flex justify-center">
         <Link to={`/anime/${episodio.slug}`} key={episodio.id}>
           <ul className="grid justify-center bg-zinc-700 rounded-xl">
-            <img className="rounded-xl w-80 h-auto" src={episodio.image} alt={episodio.titulo} />
+            <img className="rounded-xl w-full h-auto" src={episodio.image} alt={episodio.titulo} />
             <span className='absolute top py-0 px-2 text-white font-bold rounded-xl bg-zinc-700 text-sm'>HD</span>
             <li className="text-center font-mono">{episodio.titulo}</li>
           </ul>
