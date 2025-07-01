@@ -54,7 +54,7 @@ const Coments = () => {
     <div className='container mx-auto text-white'>
 
     
-      <section className='mt-8 mb-20 p-2'>
+      <section className='mt-8 mb-20 p-3'>
         <h2 className='text-xl font-bold mb-4'>Comentários</h2>
 
         <form onSubmit={handleComentario} className='mb-6 space-y-4'>
