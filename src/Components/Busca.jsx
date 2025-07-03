@@ -46,7 +46,7 @@ const Busca = () => {
           )
         ) : (
           <p className="text-gray-400 col-span-full text-center">
-            Digite algo para buscar episódios.
+            Digite algo para buscar o anime.
           </p>
         )}
       </div>
