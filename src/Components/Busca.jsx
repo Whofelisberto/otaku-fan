@@ -18,7 +18,7 @@ const Busca = () => {
         type="text"
         value={busca}
         onChange={(e) => setBusca(e.target.value)}
-        placeholder="Digite o nome do episódio..."
+        placeholder="Digite o nome do anime..."
         className="w-full p-3 rounded bg-zinc-700 text-white placeholder-gray-400 mb-6"
       />
 
